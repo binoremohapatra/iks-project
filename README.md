@@ -16,26 +16,26 @@
 
 ---
 
-## 📋 Overview
+## Overview
 
 This is a **secure, scalable, and production-ready** Spring Boot REST API designed for managing product inventory. It implements industry-standard authentication with JWT, role-based access control, comprehensive validation, and follows enterprise best practices for error handling, testing, and deployment.
 
 ### Key Highlights
 
-- 🔐 **Enterprise Security**: JWT-based stateless authentication with BCrypt password hashing
-- 👥 **Role-Based Access Control**: Granular permissions (ADMIN/USER) for secure operations
-- ✅ **Input Validation**: Comprehensive request validation with detailed error responses
-- 📊 **Pagination & Sorting**: Efficient data retrieval with configurable pagination
-- 🐳 **Container-Ready**: Multi-stage Docker build for production deployment
-- 📖 **OpenAPI/Swagger**: Interactive API documentation for seamless integration
-- 🧪 **Comprehensive Testing**: 100% test coverage for critical business logic
-- 🗄️ **Database Flexibility**: Support for both H2 (development) and PostgreSQL (production)
-- 🔄 **Global Exception Handling**: Centralized error management with consistent JSON responses
-- 🚀 **High Performance**: Optimized queries with connection pooling (HikariCP)
+- **Enterprise Security**: JWT-based stateless authentication with BCrypt password hashing
+- **Role-Based Access Control**: Granular permissions (ADMIN/USER) for secure operations
+- **Input Validation**: Comprehensive request validation with detailed error responses
+- **Pagination & Sorting**: Efficient data retrieval with configurable pagination
+- **Container-Ready**: Multi-stage Docker build for production deployment
+- **OpenAPI/Swagger**: Interactive API documentation for seamless integration
+- **Comprehensive Testing**: 100% test coverage for critical business logic
+- **Database Flexibility**: Support for both H2 (development) and PostgreSQL (production)
+- **Global Exception Handling**: Centralized error management with consistent JSON responses
+- **High Performance**: Optimized queries with connection pooling (HikariCP)
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ### System Design
 
@@ -98,7 +98,7 @@ This is a **secure, scalable, and production-ready** Spring Boot REST API design
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 | Category | Technology | Version |
 |----------|-----------|---------|
@@ -114,7 +114,7 @@ This is a **secure, scalable, and production-ready** Spring Boot REST API design
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 
@@ -143,7 +143,7 @@ This is a **secure, scalable, and production-ready** Spring Boot REST API design
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -185,7 +185,7 @@ mvn test
 
 ---
 
-## 🔐 Authentication & Authorization
+## Authentication & Authorization
 
 ### Default Users
 
@@ -215,7 +215,7 @@ mvn test
 
 ---
 
-## 📖 API Documentation
+## API Documentation
 
 ### Base URL
 ```
@@ -226,12 +226,12 @@ http://localhost:8080
 
 | Method | Endpoint                | Authentication | Description                          |
 |--------|------------------------|----------------|--------------------------------------|
-| POST   | /api/auth/login        | ❌ Public      | Authenticate user and get JWT token   |
-| GET    | /products              | ✅ Required    | Get paginated list of products        |
-| GET    | /products/{id}         | ✅ Required    | Get a specific product by ID          |
-| POST   | /products              | ✅ Required    | Create a new product (ADMIN only)     |
-| PUT    | /products/{id}         | ✅ Required    | Update an existing product (ADMIN)    |
-| DELETE | /products/{id}         | ✅ Required    | Delete a product (ADMIN only)         |
+| POST   | /api/auth/login        | Public         | Authenticate user and get JWT token   |
+| GET    | /products              | Required       | Get paginated list of products        |
+| GET    | /products/{id}         | Required       | Get a specific product by ID          |
+| POST   | /products              | Required       | Create a new product (ADMIN only)     |
+| PUT    | /products/{id}         | Required       | Update an existing product (ADMIN)    |
+| DELETE | /products/{id}         | Required       | Delete a product (ADMIN only)         |
 
 ### Pagination & Sorting
 
@@ -280,7 +280,7 @@ All errors follow a consistent JSON format:
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 
@@ -292,12 +292,12 @@ mvn test
 
 The test suite includes 13 comprehensive tests covering:
 
-- ✅ Authentication (login success, wrong password, blank fields)
-- ✅ Authorization (401 without token, 403 for insufficient permissions)
-- ✅ CRUD Operations (create, read, update, delete)
-- ✅ Input Validation (field-level validation errors)
-- ✅ Pagination & Sorting (query parameters)
-- ✅ Error Handling (invalid IDs, malformed requests)
+- Authentication (login success, wrong password, blank fields)
+- Authorization (401 without token, 403 for insufficient permissions)
+- CRUD Operations (create, read, update, delete)
+- Input Validation (field-level validation errors)
+- Pagination & Sorting (query parameters)
+- Error Handling (invalid IDs, malformed requests)
 
 ### Test Results
 
@@ -310,7 +310,7 @@ Skipped: 0
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Build Docker Image
 
@@ -339,7 +339,7 @@ docker compose up --build
 
 ---
 
-## 🗄️ Database Configuration
+## Database Configuration
 
 ### H2 (Development - Default)
 
@@ -381,7 +381,7 @@ export DB_PASSWORD=your_password
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Application Properties
 
@@ -407,7 +407,7 @@ export DB_PASSWORD=your_password
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 product-inventory-api/
@@ -462,7 +462,7 @@ product-inventory-api/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -474,13 +474,13 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Binore Mohapatra**
 
@@ -489,7 +489,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Spring Boot team for the amazing framework
 - Spring Security for comprehensive security features
@@ -498,10 +498,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-## 📞 Support
+## Support
 
 For questions or support, please open an issue in the GitHub repository or contact the author directly.
 
 ---
 
-**Built with ❤️ using Spring Boot**
+**Built with Spring Boot**
